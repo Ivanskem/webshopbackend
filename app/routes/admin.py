@@ -6,7 +6,7 @@ from app.utils.decorators import admin_required
 from flask_admin import AdminIndexView, expose
 from flask_admin.contrib.sqla import ModelView
 
-bp = Blueprint('admin', __name__)
+bp = Blueprint('admin_bp', __name__)
 
 @bp.route('/dashboard')
 @login_required
